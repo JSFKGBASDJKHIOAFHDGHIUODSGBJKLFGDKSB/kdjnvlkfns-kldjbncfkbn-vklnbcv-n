@@ -1,0 +1,50 @@
+local player = game.Players.LocalPlayer
+local playerID = player.UserId
+local whitelistedPlayers = {
+    "782760380", "113030140", "3991213397", "2926285516", "4578970240", 
+    "31623779", "3638893080", "982177828", "3184375277", "4500019705", 
+    "1520000696", "3153282720", "2444203145", "4935352360", "4635586954", 
+    "5129673147", "2244066292", "523566367"
+}
+
+local function isPlayerWhitelisted(playerID)
+    for _, whitelistedUser in ipairs(whitelistedPlayers) do
+        if tostring(playerID) == whitelistedUser then
+            return true
+        end
+    end
+    return false
+end
+
+local function showNotification(message, backgroundColor)
+    local gui = Instance.new("ScreenGui")
+    gui.Name = "Notification"
+    gui.Parent = player.PlayerGui
+    
+    local frame = Instance.new("Frame")
+    frame.Size = UDim2.new(1, 0, 1, 0)
+    frame.BackgroundColor3 = backgroundColor
+    frame.Parent = gui
+    
+    local messageLabel = Instance.new("TextLabel")
+    messageLabel.Size = UDim2.new(1, 0, 1, 0)
+    messageLabel.Position = UDim2.new(0, 0, 0, 0)
+    messageLabel.Text = message
+    messageLabel.TextSize = 36
+    messageLabel.Parent = frame
+    
+    repeat
+        wait(1)
+    until isPlayerWhitelisted(playerID)
+    
+    gui:Destroy()
+end
+
+if not isPlayerWhitelisted(playerID) then
+    showNotification("You are not whitelisted. Buy premium.", Color3.fromRGB(255, 0, 0))
+    print("You are not whitelisted. Execute non-whitelisted logic here.")
+else
+    showNotification("You are Whitelisted. Enjoy AK ADMIN PREMIUM.", Color3.fromRGB(0, 255, 0))
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JSFKGBASDJKHIOAFHDGHIUODSGBJKLFGDKSB/kdjnvlkfns-kldjbncfkbn-vklnbcv-n/main/AK%20ADMIN%20PREMIUM"))()
+    print("You are whitelisted! Execute whitelisted logic here.")
+end
