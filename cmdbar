@@ -12,10 +12,10 @@
 local AkaScreenGui = Instance.new("ScreenGui")
 local BarFrame = Instance.new("Frame")
 local TextBox = Instance.new("TextBox")
+local ImageLabel = Instance.new("ImageLabel")
 local UICorner = Instance.new("UICorner")
 local UIScale = Instance.new("UIScale")
 local back = Instance.new("ImageLabel")
-local ImageLabel = Instance.new("ImageLabel")
 
 -- Properties
 
@@ -27,16 +27,17 @@ BarFrame.Name = "BarFrame"
 BarFrame.Parent = AkaScreenGui
 BarFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 BarFrame.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+BarFrame.BackgroundTransparency = 1
 BarFrame.BorderColor3 = Color3.new(0, 0, 0)
 BarFrame.BorderSizePixel = 0
-BarFrame.Position = UDim2.new(0.503218055, 0, 0.840085149, 0)
+BarFrame.Position = UDim2.new(0.536462247, 0, 0.840085149, 0)
 BarFrame.Size = UDim2.new(0, 269, 0, 41)
 
 TextBox.Parent = BarFrame
 TextBox.BackgroundColor3 = Color3.new(1, 1, 1)
 TextBox.BackgroundTransparency = 1
-TextBox.Position = UDim2.new(0.209470615, 0, 0, 0)
-TextBox.Size = UDim2.new(0.770368218, 0, 0.0256090853, 40)
+TextBox.Position = UDim2.new(0.224340498, 0, 0, 0)
+TextBox.Size = UDim2.new(0.740628481, 0, 0.0256090853, 40)
 TextBox.ZIndex = 2
 TextBox.Font = Enum.Font.Gotham
 TextBox.PlaceholderColor3 = Color3.new(0.45098, 0.45098, 0.45098)
@@ -46,6 +47,19 @@ TextBox.TextColor3 = Color3.new(0.686275, 0.686275, 0.686275)
 TextBox.TextSize = 14
 TextBox.TextStrokeColor3 = Color3.new(0.686275, 0.686275, 0.686275)
 TextBox.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageLabel.Parent = BarFrame
+ImageLabel.Active = true
+ImageLabel.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+ImageLabel.BackgroundTransparency = 1
+ImageLabel.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.ClipsDescendants = true
+ImageLabel.LayoutOrder = 2
+ImageLabel.Position = UDim2.new(0.0223048329, 0, 0.829268277, 0)
+ImageLabel.Selectable = true
+ImageLabel.Size = UDim2.new(0, 40, 0, -28)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=15145938849"
 
 UICorner.Parent = BarFrame
 UICorner.CornerRadius = UDim.new(0, 4)
@@ -58,7 +72,7 @@ back.Active = true
 back.AnchorPoint = Vector2.new(0.5, 0.5)
 back.BackgroundColor3 = Color3.new(1, 1, 1)
 back.BackgroundTransparency = 1
-back.Position = UDim2.new(0.496535063, 0, 0.485156178, 0)
+back.Position = UDim2.new(0.470512748, 0, 0.485156178, 0)
 back.Size = UDim2.new(1.11547983, 48, 1.63481247, 48)
 back.ZIndex = -2
 back.Image = "rbxassetid://6049668989"
@@ -66,262 +80,200 @@ back.ImageColor3 = Color3.new(0, 0, 0)
 back.ScaleType = Enum.ScaleType.Slice
 back.SliceCenter = Rect.new(128, 128, 128, 128)
 
-ImageLabel.Parent = BarFrame
-ImageLabel.Active = true
-ImageLabel.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
-ImageLabel.BackgroundTransparency = 1
-ImageLabel.BorderColor3 = Color3.new(0, 0, 0)
-ImageLabel.BorderSizePixel = 0
-ImageLabel.ClipsDescendants = true
-ImageLabel.LayoutOrder = 2
-ImageLabel.Position = UDim2.new(0.0371747203, 0, 0.780487776, 0)
-ImageLabel.Selectable = true
-ImageLabel.Size = UDim2.new(0, 31, 0, -25)
-ImageLabel.Image = "http://www.roblox.com/asset/?id=15145938849"
-
 -- Scripts
 
-local function DQIHLJ_fake_script() -- TextBox.LocalScript 
+local function DCEO_fake_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
-	--[[
-	
-			Gui2Lua™
-			10zOfficial
-			Version 1.0.0
-	
-	]]
-	
-	
-	-- Instances
-	
-	local AkaScreenGui = Instance.new("ScreenGui")
-	local BarFrame = Instance.new("Frame")
-	local TextBox = Instance.new("TextBox")
-	local UICorner = Instance.new("UICorner")
-	local UIScale = Instance.new("UIScale")
-	
-	-- Properties
-	
-	AkaScreenGui.Name = "AkaScreenGui"
-	AkaScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-	AkaScreenGui.ResetOnSpawn = false
-	
-	BarFrame.Name = "BarFrame"
-	BarFrame.Parent = AkaScreenGui
-	BarFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-	BarFrame.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
-	BarFrame.BorderColor3 = Color3.new(0, 0, 0)
-	BarFrame.BorderSizePixel = 0
-	BarFrame.Position = UDim2.new(0.518602967, 0, 0.848813355, 0)
-	BarFrame.Size = UDim2.new(0, 269, 0, 41)
-	
-	TextBox.Parent = BarFrame
-	TextBox.BackgroundColor3 = Color3.new(1, 1, 1)
-	TextBox.BackgroundTransparency = 1
-	TextBox.Position = UDim2.new(0.138838619, 0, 0, 0)
-	TextBox.Size = UDim2.new(0.841000199, 0, 0.0256090853, 40)
-	TextBox.ZIndex = 2
-	TextBox.Font = Enum.Font.Gotham
-	TextBox.PlaceholderColor3 = Color3.new(0.45098, 0.45098, 0.45098)
-	TextBox.PlaceholderText = "Command Bar"
-	TextBox.Text = ""
-	TextBox.TextColor3 = Color3.new(0.686275, 0.686275, 0.686275)
-	TextBox.TextSize = 14
-	TextBox.TextStrokeColor3 = Color3.new(0.686275, 0.686275, 0.686275)
-	TextBox.TextXAlignment = Enum.TextXAlignment.Left
-	
-	UICorner.Parent = BarFrame
-	UICorner.CornerRadius = UDim.new(0, 4)
-	
-	UIScale.Parent = BarFrame
-	
 	TextBox.FocusLost:Connect(function(enterPressed)
-		if enterPressed then
-			local Command = TextBox.Text
-			TextBox.Text = ""
-			if Command ~= "" then
-				local success, errorMessage = pcall(function()
-					local args = {}
-					for arg in Command:gmatch("%S+") do
-						table.insert(args, arg)
-					end
-					local commandName = table.remove(args, 1)
-					if commandName == "afk" then
-						loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringypVvhJBq4QNz", true))()
+			if enterPressed then
+				local Command = TextBox.Text
+				TextBox.Text = ""
+				if Command ~= "" then
+					local success, errorMessage = pcall(function()
+						local args = {}
+						for arg in Command:gmatch("%S+") do
+							table.insert(args, arg)
+						end
+						local commandName = table.remove(args, 1)
+						if commandName == "afk" then
+							loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringypVvhJBq4QNz", true))()
 	
-						-- Toggle function
-						local function AC()
-							while _G.AC == true do
-								for i, v in pairs(workspace:GetChildren()) do
-									if v:IsA("Model") then
-										if game.Players:FindFirstChild(v.Name) then
-											if v:FindFirstChildWhichIsA("Tool") then
-												local tool = v:FindFirstChildWhichIsA("Tool")
-												tool:Destroy()
+							-- Toggle function
+							local function AC()
+								while _G.AC == true do
+									for i, v in pairs(workspace:GetChildren()) do
+										if v:IsA("Model") then
+											if game.Players:FindFirstChild(v.Name) then
+												if v:FindFirstChildWhichIsA("Tool") then
+													local tool = v:FindFirstChildWhichIsA("Tool")
+													tool:Destroy()
+												end
 											end
 										end
 									end
+	
+									wait()
 								end
-	
-								wait()
 							end
+							_G.AC = false
+						elseif commandName == "anticrash2 on" then
+							print("anticrash2 on")
+							_G.AC = true
+							AC()
+						elseif commandName == "anticrash2 off" then
+							print("anticrash2 off")
+							_G.AC = false
+							AC()
+	
+						elseif commandName == "hub" then
+							loadstring(game:HttpGet("https://scriptblox.com/raw/Ragdoll-Engine-UnslaggerHub-BEST-RAGD0LL-ENGlNE-SCRIPT-WORKING-8466"))()
+						elseif commandName == "IY" then
+							loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source', true))()
+						elseif commandName == "emoji" then
+							loadstring(game:HttpGet('https://raw.githubusercontent.com/Alikhammass/emoji/main/emo', true))()
+						elseif commandName == "sirius" then
+							loadstring(game:HttpGet('https://sirius.menu/script'))()
+						elseif commandName == "lagserver" then
+							loadstring(game:HttpGet('https://pastebin.com/raw/5YS84U3e'))()
+						elseif commandName == "fps" then
+							loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/MiscReleases/main/Roblox/UWPFPSBooster.lua"))()
+						elseif commandName == "byebye all" then
+							loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/quickfling"))()
+						elseif commandName == "f3x" then
+							loadstring(game:HttpGet('https://raw.githubusercontent.com/Alikhammass/antifling./main/F3x', true))()
+						elseif commandName == "crash" then
+							loadstring(game:HttpGet('https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/crash', true))()
+						elseif commandName == "pltiger" then
+							loadstring(game:HttpGet('https://raw.githubusercontent.com/h17s3/TIGERADMIN/main/TIGERADMINSCRIPTFREE', true))()
+						elseif commandName == "swordreach" then
+							loadstring(game:HttpGet('https://raw.githubusercontent.com/Alikhammass/emoji/main/swordreach', true))()
+						elseif commandName == "antilog" then
+							loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/antilogger"))()
+						elseif commandName == "rejoin" then
+							loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/rejoin"))()
+						elseif commandName == "oof" then
+							loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/oof"))()
+						elseif commandName == "kronefling" then
+							loadstring(game:HttpGet('https://raw.githubusercontent.com/Alikhammass/antifling./main/loopfling', true))()
+						elseif commandName == "getoutmyinv" then
+							loadstring(game:HttpGet('https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/getoutmyinv', true))()
+						elseif commandName == "gimmetools" then
+							loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/gimmetools"))()
+						elseif commandName == "ftao" then
+							loadstring(game:HttpGet("https://raw.githubusercontent.com/BlizTBr/scripts/main/FTAP.lua"))()
+						elseif commandName == "anticrash" then
+							loadstring(game:HttpGet('https://raw.githubusercontent.com/v9h/dhrpvc/main/anticrash.lua', true))()
+						elseif commandName == "ad" then
+							wait(0.1)
+							game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer("Join server for Script", "All")
+							wait(0.1)
+							game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(".gg/BvycNRCNvC", "All")				elseif commandName == "decidelag" then
+						elseif commandName == "serverhop" then
+							loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/emoji/main/serverhop", true))()
+						elseif commandName == "swordbot" then
+							loadstring(game:HttpGet('https://raw.githubusercontent.com/yeerma/1/main/bot'))()				elseif commandName == "anticrash2 on" then
+						elseif commandName == "bypasser" then
+							loadstring(game:HttpGet('https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/bypasser', true))()
+						elseif commandName == "nonofling" then
+							loadstring(game:HttpGet('https://raw.githubusercontent.com/Alikhammass/antifling./main/Antifling', true))()
+						elseif commandName == "donttouchme" then
+							loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe/main/obf_5wpM7bBcOPspmX7lQ3m75SrYNWqxZ858ai3tJdEAId6jSI05IOUB224FQ0VSAswH.lua.txt', true))()
+						elseif commandName == "bbhub" then
+							loadstring(game:HttpGet("https://raw.githubusercontent.com/Salmon-B0T/SalmonHub/main/SalmonHub.lua", true))()
+						elseif commandName == "decidecrash" then
+							loadstring(game:HttpGet("https://pastebin.com/raw/hMh6MKUU"))()
+						elseif commandName == "decidelag" then
+							loadstring(game:HttpGet("https://pastebin.com/raw/xd1ddLJS"))()
+						elseif commandName == "triviabooth" then
+							loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/triviabooth"))()
+						elseif commandName == "protonadmin" then
+							loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/protonadmin"))()
+						elseif commandName == "jobidjoiner" then
+							loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/jobidjoiner"))()
+						elseif commandName == "aimbot" then
+							loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/aimbot"))()
+						elseif commandName == "chaoshub" then
+							loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/AstralHub/main/Loader.lua"))()
 						end
-						_G.AC = false
-					elseif commandName == "anticrash2 on" then
-						print("anticrash2 on")
-						_G.AC = true
-						AC()
-					elseif commandName == "anticrash2 off" then
-						print("anticrash2 off")
-						_G.AC = false
-						AC()
+					end)
+				end
+			end
+		end)
 	
-					elseif commandName == "hub" then
-						loadstring(game:HttpGet("https://scriptblox.com/raw/Ragdoll-Engine-UnslaggerHub-BEST-RAGD0LL-ENGlNE-SCRIPT-WORKING-8466"))()
-					elseif commandName == "IY" then
-						loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source', true))()
-					elseif commandName == "emoji" then
-						loadstring(game:HttpGet('https://raw.githubusercontent.com/Alikhammass/emoji/main/emo', true))()
-					elseif commandName == "sirius" then
-						loadstring(game:HttpGet('https://sirius.menu/script'))()
-					elseif commandName == "lagserver" then
-						loadstring(game:HttpGet('https://pastebin.com/raw/5YS84U3e'))()
-					elseif commandName == "fps" then
-						loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/MiscReleases/main/Roblox/UWPFPSBooster.lua"))()
-					elseif commandName == "byebye all" then
-						loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/quickfling"))()
-					elseif commandName == "f3x" then
-						loadstring(game:HttpGet('https://raw.githubusercontent.com/Alikhammass/antifling./main/F3x', true))()
-					elseif commandName == "crash" then
-						loadstring(game:HttpGet('https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/crash', true))()
-					elseif commandName == "pltiger" then
-						loadstring(game:HttpGet('https://raw.githubusercontent.com/h17s3/TIGERADMIN/main/TIGERADMINSCRIPTFREE', true))()
-					elseif commandName == "swordreach" then
-						loadstring(game:HttpGet('https://raw.githubusercontent.com/Alikhammass/emoji/main/swordreach', true))()
-					elseif commandName == "antilog" then
-						loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/antilogger"))()
-					elseif commandName == "rejoin" then
-						loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/rejoin"))()
-					elseif commandName == "oof" then
-						loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/oof"))()
-					elseif commandName == "kronefling" then
-						loadstring(game:HttpGet('https://raw.githubusercontent.com/Alikhammass/antifling./main/loopfling', true))()
-					elseif commandName == "getoutmyinv" then
-						loadstring(game:HttpGet('https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/getoutmyinv', true))()
-					elseif commandName == "gimmetools" then
-						loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/gimmetools"))()
-					elseif commandName == "ftao" then
-						loadstring(game:HttpGet("https://raw.githubusercontent.com/BlizTBr/scripts/main/FTAP.lua"))()
-					elseif commandName == "anticrash" then
-						loadstring(game:HttpGet('https://raw.githubusercontent.com/v9h/dhrpvc/main/anticrash.lua', true))()
-					elseif commandName == "ad" then
-						wait(0.1)
-						game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer("Join server for Script", "All")
-						wait(0.1)
-						game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(".gg/BvycNRCNvC", "All")				elseif commandName == "decidelag" then
-					elseif commandName == "serverhop" then
-						loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/emoji/main/serverhop", true))()
-					elseif commandName == "swordbot" then
-						loadstring(game:HttpGet('https://raw.githubusercontent.com/yeerma/1/main/bot'))()				elseif commandName == "anticrash2 on" then
-					elseif commandName == "bypasser" then
-						loadstring(game:HttpGet('https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/bypasser', true))()
-					elseif commandName == "nonofling" then
-						loadstring(game:HttpGet('https://raw.githubusercontent.com/Alikhammass/antifling./main/Antifling', true))()
-					elseif commandName == "donttouchme" then
-						loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe/main/obf_5wpM7bBcOPspmX7lQ3m75SrYNWqxZ858ai3tJdEAId6jSI05IOUB224FQ0VSAswH.lua.txt', true))()
-					elseif commandName == "bbhub" then
-						loadstring(game:HttpGet("https://raw.githubusercontent.com/Salmon-B0T/SalmonHub/main/SalmonHub.lua", true))()
-					elseif commandName == "decidecrash" then
-						loadstring(game:HttpGet("https://pastebin.com/raw/hMh6MKUU"))()
-					elseif commandName == "decidelag" then
-						loadstring(game:HttpGet("https://pastebin.com/raw/xd1ddLJS"))()
-					elseif commandName == "triviabooth" then
-						loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/triviabooth"))()
-					elseif commandName == "protonadmin" then
-						loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/protonadmin"))()
-					elseif commandName == "jobidjoiner" then
-						loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/jobidjoiner"))()
-					elseif commandName == "aimbot" then
-						loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/aimbot"))()
-					elseif commandName == "chaoshub" then
-						loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/AstralHub/main/Loader.lua"))()
+		local toggled = false
+		local closed = UDim2.new(0, 248,0, 0)
+		local open = UDim2.new(0, 248,0, 56)
+		local BarFrame = BarFrame
+		local tb = TextBox
+		local opendtext = "Command Bar!"
+		local closedtext = "Closed."
+	
+	
+		AkaScreenGui.InputBegan:Connect(function(input)
+			if input.KeyCode == Enum.KeyCode.V then
+				if toggled == false then
+					BarFrame:TweenSize(UDim2.new(0, 250,0, 56))
+					toggled = true
+					task.wait(1)
+					for i = 1,#opendtext,1 do
+						tb.PlaceholderText = string.sub(opendtext,1,i)
+						wait(0.05)
 					end
-				end)
-			end
-		end
-	end)
 	
-	local toggled = false
-	local closed = UDim2.new(0, 248,0, 0)
-	local open = UDim2.new(0, 248,0, 56)
-	local BarFrame = BarFrame
-	local tb = TextBox
-	local opendtext = "Command Bar!"
-	local closedtext = "Closed."
-	
-	
-	AkaScreenGui.InputBegan:Connect(function(input)
-		if input.KeyCode == Enum.KeyCode.V then
-			if toggled == false then
-				BarFrame:TweenSize(UDim2.new(0, 250,0, 56))
-				toggled = true
-				task.wait(1)
-				for i = 1,#opendtext,1 do
-					tb.PlaceholderText = string.sub(opendtext,1,i)
-					wait(0.05)
+				else
+					for i = 1,#closedtext,1 do
+						tb.PlaceholderText = string.sub(closedtext,1,i)
+						wait(0.05)
+					end
+					task.wait(1)
+					BarFrame:TweenSize(UDim2.new(0, 400,0, 0))
+					toggled = false
 				end
-	
-			else
-				for i = 1,#closedtext,1 do
-					tb.PlaceholderText = string.sub(closedtext,1,i)
-					wait(0.05)
-				end
-				task.wait(1)
-				BarFrame:TweenSize(UDim2.new(0, 400,0, 0))
-				toggled = false
 			end
-		end
-	end)
+		end)
+	end
+	coroutine.wrap(GALBKQ_fake_script)()
+	local function TOLIN_fake_script() -- AkaScreenGui.LocalScript 
+		local script = Instance.new('LocalScript', AkaScreenGui)
+	
+		local uis = game:GetService("UserInputService")
+		local toggled = false
+		local closed = UDim2.new(0, 248,0, 0)
+		local open = UDim2.new(0, 248,0, 56)
+		local BarFrame = script.Parent:WaitForChild("Frame")
+		local Back = BarFrame:WaitForChild("ImageLabel")
+		local tb = BarFrame:WaitForChild("TextBox")
+		local opendtext = "Command Bar!"
+		local closedtext = "Closed."
+	
+	
+		uis.InputBegan:Connect(function(input)
+			if input.KeyCode == Enum.KeyCode.V then
+				if toggled == false then
+					Back:TweenSize(UDim2.new(1.056, 48,1.318, 48))
+					BarFrame:TweenSize(UDim2.new(0, 250,0, 56))
+					toggled = true
+					task.wait(1)
+					for i = 1,#opendtext,1 do
+						tb.PlaceholderText = string.sub(opendtext,1,i)
+						wait(0.05)
+					end
+	
+				else
+					for i = 1,#closedtext,1 do
+						tb.PlaceholderText = string.sub(closedtext,1,i)
+						wait(0.05)
+					end
+					task.wait(1)
+					Back:TweenSize(UDim2.new(1.056, 48, 0, 0))
+					BarFrame:TweenSize(UDim2.new(0, 400,0, 0))
+					toggled = false
+				end
+			end
+		end)
+	end
+	coroutine.wrap(TOLIN_fake_script)()
+	
 end
-coroutine.wrap(DQIHLJ_fake_script)()
-local function DZDJ_fake_script() -- AkaScreenGui.LocalScript 
-	local script = Instance.new('LocalScript', AkaScreenGui)
-
-	local uis = game:GetService("UserInputService")
-	local toggled = false
-	local closed = UDim2.new(0, 248,0, 0)
-	local open = UDim2.new(0, 248,0, 56)
-	local BarFrame = script.Parent:WaitForChild("Frame")
-	local Back = BarFrame:WaitForChild("ImageLabel")
-	local tb = BarFrame:WaitForChild("TextBox")
-	local opendtext = "Command Bar!"
-	local closedtext = "Closed."
-	
-	
-	uis.InputBegan:Connect(function(input)
-		if input.KeyCode == Enum.KeyCode.V then
-			if toggled == false then
-				Back:TweenSize(UDim2.new(1.056, 48,1.318, 48))
-				BarFrame:TweenSize(UDim2.new(0, 250,0, 56))
-				toggled = true
-				task.wait(1)
-				for i = 1,#opendtext,1 do
-					tb.PlaceholderText = string.sub(opendtext,1,i)
-					wait(0.05)
-				end
-	
-			else
-				for i = 1,#closedtext,1 do
-					tb.PlaceholderText = string.sub(closedtext,1,i)
-					wait(0.05)
-				end
-				task.wait(1)
-				Back:TweenSize(UDim2.new(1.056, 48, 0, 0))
-				BarFrame:TweenSize(UDim2.new(0, 400,0, 0))
-				toggled = false
-			end
-		end
-	end)
-end
-coroutine.wrap(DZDJ_fake_script)()
+coroutine.wrap(DCEO_fake_script)()
