@@ -14,6 +14,8 @@ local BarFrame = Instance.new("Frame")
 local TextBox = Instance.new("TextBox")
 local UICorner = Instance.new("UICorner")
 local UIScale = Instance.new("UIScale")
+local back = Instance.new("ImageLabel")
+local ImageLabel = Instance.new("ImageLabel")
 
 -- Properties
 
@@ -27,14 +29,14 @@ BarFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 BarFrame.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
 BarFrame.BorderColor3 = Color3.new(0, 0, 0)
 BarFrame.BorderSizePixel = 0
-BarFrame.Position = UDim2.new(0.518602967, 0, 0.848813355, 0)
+BarFrame.Position = UDim2.new(0.503218055, 0, 0.840085149, 0)
 BarFrame.Size = UDim2.new(0, 269, 0, 41)
 
 TextBox.Parent = BarFrame
 TextBox.BackgroundColor3 = Color3.new(1, 1, 1)
 TextBox.BackgroundTransparency = 1
-TextBox.Position = UDim2.new(0.138838619, 0, 0, 0)
-TextBox.Size = UDim2.new(0.841000199, 0, 0.0256090853, 40)
+TextBox.Position = UDim2.new(0.209470615, 0, 0, 0)
+TextBox.Size = UDim2.new(0.770368218, 0, 0.0256090853, 40)
 TextBox.ZIndex = 2
 TextBox.Font = Enum.Font.Gotham
 TextBox.PlaceholderColor3 = Color3.new(0.45098, 0.45098, 0.45098)
@@ -50,12 +52,89 @@ UICorner.CornerRadius = UDim.new(0, 4)
 
 UIScale.Parent = BarFrame
 
+back.Name = "back"
+back.Parent = BarFrame
+back.Active = true
+back.AnchorPoint = Vector2.new(0.5, 0.5)
+back.BackgroundColor3 = Color3.new(1, 1, 1)
+back.BackgroundTransparency = 1
+back.Position = UDim2.new(0.496535063, 0, 0.485156178, 0)
+back.Size = UDim2.new(1.11547983, 48, 1.63481247, 48)
+back.ZIndex = -2
+back.Image = "rbxassetid://6049668989"
+back.ImageColor3 = Color3.new(0, 0, 0)
+back.ScaleType = Enum.ScaleType.Slice
+back.SliceCenter = Rect.new(128, 128, 128, 128)
+
+ImageLabel.Parent = BarFrame
+ImageLabel.Active = true
+ImageLabel.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+ImageLabel.BackgroundTransparency = 1
+ImageLabel.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.ClipsDescendants = true
+ImageLabel.LayoutOrder = 2
+ImageLabel.Position = UDim2.new(0.0371747203, 0, 0.780487776, 0)
+ImageLabel.Selectable = true
+ImageLabel.Size = UDim2.new(0, 31, 0, -25)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=15145938849"
+
 -- Scripts
 
-local function CVLR_fake_script() -- TextBox.LocalScript 
+local function DQIHLJ_fake_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
-	local TextBox = script.Parent.Parent:WaitForChild("TextBox")
+	--[[
+	
+			Gui2Lua™
+			10zOfficial
+			Version 1.0.0
+	
+	]]
+	
+	
+	-- Instances
+	
+	local AkaScreenGui = Instance.new("ScreenGui")
+	local BarFrame = Instance.new("Frame")
+	local TextBox = Instance.new("TextBox")
+	local UICorner = Instance.new("UICorner")
+	local UIScale = Instance.new("UIScale")
+	
+	-- Properties
+	
+	AkaScreenGui.Name = "AkaScreenGui"
+	AkaScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	AkaScreenGui.ResetOnSpawn = false
+	
+	BarFrame.Name = "BarFrame"
+	BarFrame.Parent = AkaScreenGui
+	BarFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+	BarFrame.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+	BarFrame.BorderColor3 = Color3.new(0, 0, 0)
+	BarFrame.BorderSizePixel = 0
+	BarFrame.Position = UDim2.new(0.518602967, 0, 0.848813355, 0)
+	BarFrame.Size = UDim2.new(0, 269, 0, 41)
+	
+	TextBox.Parent = BarFrame
+	TextBox.BackgroundColor3 = Color3.new(1, 1, 1)
+	TextBox.BackgroundTransparency = 1
+	TextBox.Position = UDim2.new(0.138838619, 0, 0, 0)
+	TextBox.Size = UDim2.new(0.841000199, 0, 0.0256090853, 40)
+	TextBox.ZIndex = 2
+	TextBox.Font = Enum.Font.Gotham
+	TextBox.PlaceholderColor3 = Color3.new(0.45098, 0.45098, 0.45098)
+	TextBox.PlaceholderText = "Command Bar"
+	TextBox.Text = ""
+	TextBox.TextColor3 = Color3.new(0.686275, 0.686275, 0.686275)
+	TextBox.TextSize = 14
+	TextBox.TextStrokeColor3 = Color3.new(0.686275, 0.686275, 0.686275)
+	TextBox.TextXAlignment = Enum.TextXAlignment.Left
+	
+	UICorner.Parent = BarFrame
+	UICorner.CornerRadius = UDim.new(0, 4)
+	
+	UIScale.Parent = BarFrame
 	
 	TextBox.FocusLost:Connect(function(enterPressed)
 		if enterPressed then
@@ -70,6 +149,34 @@ local function CVLR_fake_script() -- TextBox.LocalScript
 					local commandName = table.remove(args, 1)
 					if commandName == "afk" then
 						loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringypVvhJBq4QNz", true))()
+	
+						-- Toggle function
+						local function AC()
+							while _G.AC == true do
+								for i, v in pairs(workspace:GetChildren()) do
+									if v:IsA("Model") then
+										if game.Players:FindFirstChild(v.Name) then
+											if v:FindFirstChildWhichIsA("Tool") then
+												local tool = v:FindFirstChildWhichIsA("Tool")
+												tool:Destroy()
+											end
+										end
+									end
+								end
+	
+								wait()
+							end
+						end
+						_G.AC = false
+					elseif commandName == "anticrash2 on" then
+						print("anticrash2 on")
+						_G.AC = true
+						AC()
+					elseif commandName == "anticrash2 off" then
+						print("anticrash2 off")
+						_G.AC = false
+						AC()
+	
 					elseif commandName == "hub" then
 						loadstring(game:HttpGet("https://scriptblox.com/raw/Ragdoll-Engine-UnslaggerHub-BEST-RAGD0LL-ENGlNE-SCRIPT-WORKING-8466"))()
 					elseif commandName == "IY" then
@@ -144,9 +251,41 @@ local function CVLR_fake_script() -- TextBox.LocalScript
 			end
 		end
 	end)
+	
+	local toggled = false
+	local closed = UDim2.new(0, 248,0, 0)
+	local open = UDim2.new(0, 248,0, 56)
+	local BarFrame = BarFrame
+	local tb = TextBox
+	local opendtext = "Command Bar!"
+	local closedtext = "Closed."
+	
+	
+	AkaScreenGui.InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.V then
+			if toggled == false then
+				BarFrame:TweenSize(UDim2.new(0, 250,0, 56))
+				toggled = true
+				task.wait(1)
+				for i = 1,#opendtext,1 do
+					tb.PlaceholderText = string.sub(opendtext,1,i)
+					wait(0.05)
+				end
+	
+			else
+				for i = 1,#closedtext,1 do
+					tb.PlaceholderText = string.sub(closedtext,1,i)
+					wait(0.05)
+				end
+				task.wait(1)
+				BarFrame:TweenSize(UDim2.new(0, 400,0, 0))
+				toggled = false
+			end
+		end
+	end)
 end
-coroutine.wrap(CVLR_fake_script)()
-local function LJLO_fake_script() -- AkaScreenGui.LocalScript 
+coroutine.wrap(DQIHLJ_fake_script)()
+local function DZDJ_fake_script() -- AkaScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', AkaScreenGui)
 
 	local uis = game:GetService("UserInputService")
@@ -185,4 +324,4 @@ local function LJLO_fake_script() -- AkaScreenGui.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LJLO_fake_script)()
+coroutine.wrap(DZDJ_fake_script)()
