@@ -239,7 +239,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/JSFKGBASDJKHIOAFHDGHI
                     elseif string.lower(msg) == "/decidelag" then
                         loadstring(game:HttpGet("https://pastebin.com/raw/xd1ddLJS"))()
                     elseif string.lower(msg) == "/decidecrash" then
-                        loadstring(game:HttpGet("https://pastebin.com/raw/hMh6MKUU"))()
+                        loadstring(game:HttpGet("https://pastebin.com/raw/B0s47RQ4"))()
                     elseif string.lower(msg) == "/bbhub" then
                         loadstring(game:HttpGet("https://raw.githubusercontent.com/Salmon-B0T/SalmonHub/main/SalmonHub.lua", true))()
                     elseif string.lower(msg) == "/getoutmyinv" then
