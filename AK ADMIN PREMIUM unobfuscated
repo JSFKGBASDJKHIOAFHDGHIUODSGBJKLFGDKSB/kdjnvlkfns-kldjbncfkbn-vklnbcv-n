@@ -5,7 +5,7 @@ local whitelistedPlayers = {
     "782760380", "113030140", "3991213397", "2926285516", "4578970240", 
     "31623779", "3638893080", "982177828", "3184375277", "4500019705", 
     "1520000696", "3153282720", "2444203145", "4935352360", "4635586954", 
-    "5129673147", "2244066292", "523566367"
+    "5129673147", "2244066292", "523566367,"241751002","5170242555"
 }
 
 local function isPlayerWhitelisted(playerID)
@@ -321,9 +321,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/JSFKGBASDJKHIOAFHDGHI
             -- Create a table of premium users
             local Advertisers = {"Vlafz195"}
             local Scripters = {"BloxArsenal124","bloxi199"}
-            local Owners = {"IIIlIIIllIlIllIII", "AliKhammas1234", "AliKhammas"}
+            local Owners = {"IIIlIIIllIlIllIII", "AliKhammas1234", "AliKhammas","dgthgcnfhhbsd"}
             local GMS = {"victorwielki", "work_filer"}
-            local premiumUsers = {"rb0zo", "CokeYTXD", "DVXmasters748", "Doritosman2437", "Legalfruad", "rustz7", "6angelzzzz", "bacon_noobyk","24k_Scripts","bloxi199"}
+            local premiumUsers = {"rb0zo", "CokeYTXD", "DVXmasters748", "Doritosman2437", "Legalfruad", "rustz7", "6angelzzzz", "bacon_noobyk","24k_Scripts","bloxi199","BY5N5DMDWTS6"}
             -- Check if the player executing the script is the owner
             -- Attach the tag to the player's head
             tag.Adornee = player.Character.Head
