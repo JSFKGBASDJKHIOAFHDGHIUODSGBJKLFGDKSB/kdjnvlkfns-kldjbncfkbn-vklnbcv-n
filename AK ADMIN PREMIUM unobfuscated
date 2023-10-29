@@ -236,6 +236,8 @@ else
                             loadstring(game:HttpGet('https://raw.githubusercontent.com/v9h/dhrpvc/main/anticrash.lua', true))()
                         elseif string.lower(msg) == "/kronefling" then
                             loadstring(game:HttpGet('https://raw.githubusercontent.com/Alikhammass/antifling./main/loopfling', true))()
+                         elseif string.lower(msg) == "/swordbot" then
+                            loadstring(game:HttpGet('https://raw.githubusercontent.com/yeerma/1/main/bot'))()
                         elseif string.lower(msg) == "/gimmetools" then
                             loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/gimmetools"))()
                         elseif string.lower(msg) == "/hub" then
