@@ -222,6 +222,8 @@ else
                             print("report successful")
                         elseif string.lower(msg) == "/protonadmin" then
                             loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/protonadmin"))()
+                        elseif string.lower(msg) == "/pistol" then
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Pistol"))()
                         elseif string.lower(msg) == "/triviabooth" then
                             loadstring(game:HttpGet("https://raw.githubusercontent.com/Alikhammass/MyAdmin/main/triviabooth"))()
                         elseif string.lower(msg) == "/decidelag" then
