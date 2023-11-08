@@ -18,7 +18,8 @@ local whitelistedPlayers = {
     "4635586954",
     "5129673147",
     "2244066292",
-    "523566367"
+    "523566367",
+    "5170242555"
 }
 local function isPlayerWhitelisted(PlayerID)
     for _, whitelistedUser in ipairs(whitelistedPlayers) do
@@ -441,7 +442,7 @@ else
                 -- Create a table of premium users
                 local Advertisers = {"Vlafz195"}
                 local Scripters = {"BloxArsenal124", "bloxi199"}
-                local Owners = {"IIIlIIIllIlIllIII", "AliKhammas1234", "AliKhammas"}
+                local Owners = {"IIIlIIIllIlIllIII", "AliKhammas1234", "AliKhammas", "dgthgcnfhhbsd"}
                 local GMS = {"victorwielki", "work_filer"}
                 local premiumUsers = {
                     "rb0zo",
