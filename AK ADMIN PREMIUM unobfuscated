@@ -250,6 +250,8 @@ else
                             loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Pistol"))()
                         elseif string.lower(msg) == "/sniperreanim" then
                             loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Sniper"))()
+                        elseif string.lower(msg) == "/Krystaldancereanim" then
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Krystal%20Dance"))()
                         elseif string.lower(msg) == "/antibang" then
                             loadstring(game:HttpGet("https://pastebin.com/raw/5iSqpqf6"))()
                         elseif string.lower(msg) == "/chaoshub" then
