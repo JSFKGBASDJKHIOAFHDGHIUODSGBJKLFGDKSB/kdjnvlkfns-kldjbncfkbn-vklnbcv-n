@@ -242,6 +242,14 @@ else
                             )()
                         elseif string.lower(msg) == "/lagserver" then
                             loadstring(game:HttpGet("https://pastebin.com/raw/5YS84U3e"))()
+                        elseif string.lower(msg) == "/karambit" then
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Karambit"))()
+                        elseif string.lower(msg) == "/NepVreanim" then
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Neptunian%20V"))()
+                        elseif string.lower(msg) == "/pistolreanim" then
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Pistol"))()
+                        elseif string.lower(msg) == "/sniperreanim" then
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Sniper"))()
                         elseif string.lower(msg) == "/antibang" then
                             loadstring(game:HttpGet("https://pastebin.com/raw/5iSqpqf6"))()
                         elseif string.lower(msg) == "/chaoshub" then
