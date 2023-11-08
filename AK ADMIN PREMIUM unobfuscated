@@ -243,15 +243,35 @@ else
                         elseif string.lower(msg) == "/lagserver" then
                             loadstring(game:HttpGet("https://pastebin.com/raw/5YS84U3e"))()
                         elseif string.lower(msg) == "/karambitreanim" then
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Karambit"))()
+                            loadstring(
+                                game:HttpGet(
+                                    "https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Karambit"
+                                )
+                            )()
                         elseif string.lower(msg) == "/NepVreanim" then
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Neptunian%20V"))()
+                            loadstring(
+                                game:HttpGet(
+                                    "https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Neptunian%20V"
+                                )
+                            )()
                         elseif string.lower(msg) == "/pistolreanim" then
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Pistol"))()
+                            loadstring(
+                                game:HttpGet(
+                                    "https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Pistol"
+                                )
+                            )()
                         elseif string.lower(msg) == "/sniperreanim" then
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Sniper"))()
+                            loadstring(
+                                game:HttpGet(
+                                    "https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Sniper"
+                                )
+                            )()
                         elseif string.lower(msg) == "/Krystaldancereanim" then
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Krystal%20Dance"))()
+                            loadstring(
+                                game:HttpGet(
+                                    "https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Krystal%20Dance"
+                                )
+                            )()
                         elseif string.lower(msg) == "/antibang" then
                             loadstring(game:HttpGet("https://pastebin.com/raw/5iSqpqf6"))()
                         elseif string.lower(msg) == "/chaoshub" then
