@@ -242,7 +242,7 @@ else
                             )()
                         elseif string.lower(msg) == "/lagserver" then
                             loadstring(game:HttpGet("https://pastebin.com/raw/5YS84U3e"))()
-                        elseif string.lower(msg) == "/karambit" then
+                        elseif string.lower(msg) == "/karambitreanim" then
                             loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Karambit"))()
                         elseif string.lower(msg) == "/NepVreanim" then
                             loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Neptunian%20V"))()
